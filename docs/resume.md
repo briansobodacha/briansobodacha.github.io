@@ -1,5 +1,5 @@
 # Brian Sobodacha
-2050 NE Hoyt St. #202, Portland, OR 97232 • 415-696-3662 • briansobodacha@gmail.com
+1305 NE 75th Ave, Portland, OR 97213 • 415-696-3662 • briansobodacha@gmail.com
 
 ---
 
