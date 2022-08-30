@@ -51,7 +51,7 @@ Daniel Webster College, Nashua, NH • B.S., Computer Science • Sep 2006-Dec 2
 ---
 
 ## Skills
-* Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, Assembly, shell scripting
+* Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, shell scripting
 * Platforms: Windows, Mac, Linux, iOS, Google Cloud, Docker
 * Software: Visual Studio, VS Code, XCode, Vim, Git, Perforce, Flask, Jira, Jenkins, Unity
 * Disciplines: Web development, software design, payment systems, databases and data warehouses, game development
