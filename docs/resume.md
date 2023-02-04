@@ -9,7 +9,10 @@ Staff software engineering position in a mission-driven organization with room t
 ---
 
 ## Experience
-### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020-present
+### OpenTable, Inc., San Francisco, CA • Senior Software Engineer 2 • October 2022-present
+* Restaurant Core Backend team
+
+### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020-October 2022
 * Tech lead on Infrastructure team
 * Mentored junior engineers across the department, promoting growth at both the individual- and company-level
 * Spearheaded the transition of a 10 year-old codebase to Python 3 and App Engine Second Generation
