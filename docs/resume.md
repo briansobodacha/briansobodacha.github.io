@@ -1,10 +1,6 @@
 # Brian Sobodacha
 1305 NE 75th Ave, Portland, OR 97213 • 415-696-3662 • briansobodacha@gmail.com
 
----
-
-## Objective
-Staff software engineering position in a mission-driven organization with room to further develop my leadership skills
 
 ---
 
