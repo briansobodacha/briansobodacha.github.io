@@ -9,7 +9,7 @@ on:
     branches:
       - 'main'
     paths:
-      - '**/**.md'
+      - docs/resume.md'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,41 +19,22 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v3
     - name: Setup Python Version
       uses: actions/setup-python@v2
       with:
         python-version: 3.8 # Install the python version needed
-    - name: read env
-      run: env | sort
     - name: clone
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: briansobodacha/to-pdf
         token: ${{ secrets.ACCESS_TOKEN }}
         path: ./to-pdf
-    - name: ls
-      run: ls -AFoh
-    - name: ls to-pdf
-      run: ls -AFoh to-pdf
-    - name: setup venv
-      run: python -m venv venv
-    - name: activate venv
-      run: source venv/bin/activate
     - name: install requirements
       run: pip install -r to-pdf/requirements.txt
-    - name: ls
-      run: ls -AFoh
-    - name: ls to-pdf
-      run: ls -AFoh to-pdf
     - name: convert
       run: python to-pdf/to-pdf.py ./docs/resume.md
     - name: mv
       run: mv -f to-pdf/a.pdf docs/resume.pdf
-    - name: ls
-      run: ls -AFoh
-    - name: ls to-pdf
-      run: ls -AFoh to-pdf
     - name: commit changes
       uses: EndBug/add-and-commit@v9
       with:
