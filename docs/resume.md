@@ -3,6 +3,11 @@
 
 ---
 
+## Objective
+Staff software engineering position in a mission-driven organization with room to further develop my leadership skills
+
+---
+
 ## Experience
 ### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
 * Restaurant Core Backend team
