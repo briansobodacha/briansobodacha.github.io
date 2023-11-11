@@ -19,6 +19,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python Version
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8 # Install the python version needed
     - name: read env
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
