@@ -30,7 +30,7 @@ jobs:
     - name: ls
       run: ls -AFoh
     - name: setup venv
-      run: python -m virtualenv venv
+      run: python -m venv venv
     - name: activate venv
       run: source venv/bin/activate
     - name: install requirements
