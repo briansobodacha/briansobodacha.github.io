@@ -25,13 +25,7 @@ jobs:
       with:
         python-version: 3.8 # Install the python version needed
     - name: read env
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: env | sort
-    # - name: clone
-    #   env:
-    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-    #   run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
     - name: clone
       uses: actions/checkout@v2
       with:
@@ -54,3 +48,7 @@ jobs:
       run: ls -AFoh to-pdf
     - name: convert
       run: python to-pdf/to-pdf.py ./docs/resume.md
+    - name: ls
+      run: ls -AFoh
+    - name: ls to-pdf
+      run: ls -AFoh to-pdf
