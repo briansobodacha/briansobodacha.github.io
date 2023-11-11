@@ -29,5 +29,11 @@ jobs:
       run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
     - name: ls
       run: ls -AFoh
-    - name: Send greeting
-      run: python -c "print('Hello friend')"
+    - name: setup venv
+      run: python -m virtualenv venv
+    - name: activate venv
+      run: source venv/bin/activate
+    - name: install requirements
+      run: pip install -r to-pdf/requirements.txt
+    - name: convert
+      run: python to-pdf/to_pdf.py docs/resume.md
