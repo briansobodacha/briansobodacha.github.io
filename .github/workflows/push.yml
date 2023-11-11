@@ -20,4 +20,4 @@ jobs:
     - name: env
       run: env | sort
     - name: Send greeting
-      run: python -c "Hello friend"
+      run: python -c "print('Hello friend')"
