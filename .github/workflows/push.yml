@@ -20,10 +20,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: env
+    - name: set env
+      env: # Or as an environment variable
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    - name: read env
       run: env | sort
     - name: clone
-      run: git clone https://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@github.com/briansobodacha/to-pdf.git
+      run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
     - name: ls
       run: ls -AFoh
     - name: Send greeting
