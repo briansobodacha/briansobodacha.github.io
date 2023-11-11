@@ -27,13 +27,15 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
-    - name: ls
-      run: ls -AFoh
     - name: setup venv
       run: python -m venv venv
     - name: activate venv
       run: source venv/bin/activate
     - name: install requirements
       run: pip install -r to-pdf/requirements.txt
+    - name: ls
+      run: ls -AFoh
+    - name: ls to-pdf
+      run: ls -AFoh to-pdf
     - name: convert
       run: python to-pdf/to_pdf.py docs/resume.md
