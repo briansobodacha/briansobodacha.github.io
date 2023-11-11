@@ -23,7 +23,7 @@ jobs:
     - name: env
       run: env | sort
     - name: clone
-      run: git clone git@github.com:briansobodacha/to-pdf.git
+      run: git clone https://github.com/briansobodacha/to-pdf.git
     - name: ls
       run: ls -AFoh
     - name: Send greeting
