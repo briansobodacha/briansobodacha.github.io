@@ -9,10 +9,10 @@ Staff software engineering position in a mission-driven organization with room t
 ---
 
 ## Experience
-### OpenTable, Inc., San Francisco, CA • Senior Software Engineer 2 • October 2022-present
+### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
 * Restaurant Core Backend team
 
-### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020-October 2022
+### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020 - October 2022
 * Tech lead on Infrastructure team
 * Mentored junior engineers across the department, promoting growth at both the individual- and company-level
 * Spearheaded the transition of a 10 year-old codebase to Python 3 and App Engine Second Generation
@@ -20,41 +20,36 @@ Staff software engineering position in a mission-driven organization with room t
 * Developed and maintained a pipeline to ingest raw sales data and produce daily reports
 * Configured dashboards and alerting systems, reducing incident response times from hours to minutes
 
-### Glu Mobile, Inc., San Francisco, CA • Senior Software Engineer • Apr 2018-Feb 2020
+### Glu Mobile, Inc., San Francisco, CA • Senior Software Engineer • Apr 2018 - Feb 2020
 * Full-stack gameplay and UI development on Disney Sorcerer's Arena
 * Implemented Clubs and Chat features to encourage social gaming
 * Assisted with User Interface iteration in conjunction with UX and Art teams
 * Iterated on combat systems, cinematics, and in-game shop
 
-### Humble Bundle, Inc., San Francisco, CA • Senior Software Engineer • Nov 2013-Apr 2018
+### Humble Bundle, Inc., San Francisco, CA • Senior Software Engineer • Nov 2013 - Apr 2018
 * Tech lead on Subscription team
 * Oversaw development and operation of a monthly subscription serving hundreds of thousands of customers
 * Developed full-stack web apps to facilitate customer, partner, and employee interaction with the site
 * Designed, implemented, and optimized internal tools at scale
 
-### BioWare Mythic, Fairfax, VA • Software Engineer • Mar 2010-Oct 2013
+### BioWare Mythic, Fairfax, VA • Software Engineer • Mar 2010 - Oct 2013
 * Client UI and gameplay development on Warhammer Online and Dungeon Keeper Mobile
 * Integrated Wwise audio engine into Warhammer Online
 * Shipped Ultima Online: High Seas booster
 * Maintained Ultima Online clients, server, and in-house tools
 
-### BioWare Mythic, Fairfax, VA • Software Engineer Intern • May 2009-Aug 2009
+### BioWare Mythic, Fairfax, VA • Software Engineer Intern • May 2009 - Aug 2009
 * Profiled and optimized the Ultima Online client
 * Created tools to automate asset packaging and management
 
-### Electronic Arts Tiburon, Orlando, FL • Software Engineer Intern • May 2008-Aug 2008
+### Electronic Arts Tiburon, Orlando, FL • Software Engineer Intern • May 2008 - Aug 2008
 * Researched plugin development for central game automation framework
 * Designed scripts for automated testing of player attributes
 
 ---
 
-## Education
-Daniel Webster College, Nashua, NH • B.S., Computer Science • Sep 2006-Dec 2009
-
----
-
 ## Skills
 * Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, shell scripting
-* Platforms: Windows, Mac, Linux, iOS, Google Cloud, Docker
-* Software: Visual Studio, VS Code, XCode, Vim, Git, Perforce, Flask, Jira, Jenkins, Unity
+* Platforms: Windows, Mac, Linux, iOS, Google Cloud, Docker, Kubernetes
+* Software: Visual Studio, VS Code, XCode, Vim, Git, Perforce, Flask, Jira, Jenkins, Unity, MongoDB
 * Disciplines: Web development, software design, payment systems, databases and data warehouses, game development
