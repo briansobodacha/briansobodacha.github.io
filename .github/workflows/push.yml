@@ -48,7 +48,16 @@ jobs:
       run: ls -AFoh to-pdf
     - name: convert
       run: python to-pdf/to-pdf.py ./docs/resume.md
+    - name: mv
+      run: mv -f to-pdf/a.pdf docs/resume.pdf
     - name: ls
       run: ls -AFoh
     - name: ls to-pdf
       run: ls -AFoh to-pdf
+    - name: commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        committer_name: GitHub Actions
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: 'Update resume.pdf'
+        add: 'docs/resume.pdf'
