@@ -23,10 +23,20 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: env | sort
+    # - name: clone
+    #   env:
+    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    #   run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
     - name: clone
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: git clone https://$ACCESS_TOKEN@github.com/briansobodacha/to-pdf.git
+      uses: actions/checkout@v2
+      with:
+        repository: briansobodacha/to-pdf
+        token: ${{ secrets.ACCESS_TOKEN }}
+        path: ./to-pdf
+    - name: ls
+      run: ls -AFoh
+    - name: ls to-pdf
+      run: ls -AFoh to-pdf
     - name: setup venv
       run: python -m venv venv
     - name: activate venv
