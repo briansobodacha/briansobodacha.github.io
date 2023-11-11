@@ -53,4 +53,4 @@ jobs:
     - name: ls to-pdf
       run: ls -AFoh to-pdf
     - name: convert
-      run: cd to-pdf; python to_pdf.py ./docs/resume.md
+      run: python to-pdf/to-pdf.py ./docs/resume.md
