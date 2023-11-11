@@ -1,4 +1,4 @@
-# Brian Sobodacha
+# BRIAN SOBODACHA
 1305 NE 75th Ave, Portland, OR 97213 • 415-696-3662 • briansobodacha@gmail.com
 
 ---
