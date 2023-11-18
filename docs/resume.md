@@ -1,8 +1,6 @@
 # BRIAN SOBODACHA
 1305 NE 75th Ave, Portland, OR 97213 • 415-696-3662 • briansobodacha@gmail.com
 
----
-
 ## Experience
 ### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
 * Availability Planning, Events, and Experiences (APEX) team
@@ -42,8 +40,6 @@
 ### Electronic Arts Tiburon, Orlando, FL • Software Engineer Intern • May 2008 - Aug 2008
 * Researched plugin development for central game automation framework
 * Designed scripts for automated testing of player attributes
-
----
 
 ## Skills
 * Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, shell scripting
