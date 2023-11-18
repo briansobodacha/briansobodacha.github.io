@@ -54,7 +54,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 
-  screenshot:
+  screenshot_page:
     needs: deploy_page
     runs-on: ubuntu-latest
     steps:
@@ -63,39 +63,5 @@ jobs:
         with:
           webPageURL: https://brian.sobodacha.dev/docs/resume.html
           outputFile: ./docs/resume.pdf
-          usePuppeteer: false
+          usePuppeteer: true
           useScreen: true
-          #pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
-
-  build_pdf:
-    needs: deploy_page
-    runs-on: ubuntu-latest
-    steps:
-    - name: checkout repo
-      uses: actions/checkout@v3
-    - name: setup python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - name: clone to-pdf
-      uses: actions/checkout@v3
-      with:
-        repository: briansobodacha/to-pdf
-        token: ${{ secrets.ACCESS_TOKEN }}
-        path: ./to-pdf
-    - name: install requirements
-      run: pip install -r to-pdf/requirements.txt
-    - name: exec to-pdf
-      run: python to-pdf/to-pdf.py ./docs/resume.md
-    - name: mv pdf
-      run: mv -f to-pdf/a.pdf docs/resume.pdf
-    - name: git status
-      run: git status
-    - name: commit pdf
-      uses: EndBug/add-and-commit@v9
-      with:
-        # committer_name: GitHub Actions
-        # committer_email: 41898282+github-actions[bot]@users.noreply.github.com
-        message: 'Update resume.pdf'
-        add: 'docs/resume.pdf'
-  
