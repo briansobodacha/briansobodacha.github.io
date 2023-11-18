@@ -63,4 +63,5 @@ jobs:
         with:
           webPageURL: https://brian.sobodacha.dev/docs/resume.html
           outputFile: ./docs/resume.pdf
-          usePuppeteer: true
+          useScreen: true
+          pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
