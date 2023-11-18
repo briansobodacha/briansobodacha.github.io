@@ -64,4 +64,3 @@ jobs:
           webPageURL: https://brian.sobodacha.dev/docs/resume.html
           outputFile: ./docs/resume.pdf
           usePuppeteer: true
-          useScreen: true
