@@ -15,7 +15,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -57,8 +57,8 @@ jobs:
   screenshot_page:
     # needs: deploy_page
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    # permissions:
+    #   contents: write
     steps:
       - name: git checkout
         uses: actions/checkout@v4
@@ -71,3 +71,21 @@ jobs:
           pdfOptions: '{"format": "Letter", "scale": 0.8, "margin": {"top": 0, "left": "10mm", "right": "10mm", "bottom": 0}}'
       - name: git commit
         uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
+  # build_page_2:
+  #   needs: screenshot_page
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v3
+  #     - name: Build with Jekyll
+  #       uses: actions/jekyll-build-pages@v1
+  #       with:
+  #         source: ./
+  #         destination: ./_site
+  #     - name: Upload artifact
+  #       uses: actions/upload-pages-artifact@v2
