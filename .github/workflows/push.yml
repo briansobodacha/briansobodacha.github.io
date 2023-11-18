@@ -68,6 +68,6 @@ jobs:
           webPageURL: https://brian.sobodacha.dev/docs/resume.html
           outputFile: ./docs/resume.pdf
           usePuppeteer: true
-          pdfOptions: '{"format": "Letter", "scale": 0.8, "preferCSSPageSize": true, "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+          pdfOptions: '{"format": "Letter", "scale": 0.8}'
       - name: git commit
         uses: stefanzweifel/git-auto-commit-action@v5
