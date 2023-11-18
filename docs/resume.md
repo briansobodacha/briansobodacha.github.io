@@ -48,5 +48,5 @@
 ## Skills
 * Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, shell scripting
 * Platforms: .NET, Mac, Linux, iOS, Google Cloud, Docker, Kubernetes
-* Software: Git, Perforce, Flask, Jira, Jenkins, Unity, MongoDB, Kafka, React
+* Software: Git, Perforce, Jira, Jenkins, Unity, Flask, ASP.NET, MongoDB, Kafka, React
 * Disciplines: Web development, software design, payment systems, databases and data warehouses, game development
