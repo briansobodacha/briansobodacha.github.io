@@ -57,6 +57,8 @@ jobs:
   screenshot_page:
     # needs: deploy_page
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: git checkout
         uses: actions/checkout@v4
