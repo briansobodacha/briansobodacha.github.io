@@ -58,16 +58,14 @@ jobs:
     needs: deploy_page
     runs-on: ubuntu-latest
     steps:
-      - name: take shot
-        uses: flameddd/screenshots-ci-action@master
+      - name: html to pdf
+        uses: misaelnieto/web_to_pdf_action@master
         with:
-          url: https://brian.sobodacha.dev/docs/resume.html
-          fullPage: true
-          type: png
-      - name: screenshots
-        uses: actions/upload-artifact@v2
-        with:
-          path: screenshots  
+          webPageURL: https://brian.sobodacha.dev/docs/resume.html
+          outputFile: ./docs/resume.pdf
+          usePuppeteer: false
+          useScreen: true
+          #pdfOptions: '{"format": "Letter", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
   build_pdf:
     needs: deploy_page
