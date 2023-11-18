@@ -55,7 +55,7 @@ jobs:
   #       uses: actions/deploy-pages@v2
 
   screenshot_page:
-    needs: deploy_page
+    # needs: deploy_page
     runs-on: ubuntu-latest
     steps:
       - name: git checkout
