@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Convert resume.md to resume.pdf
+name: Convert resume.md to html and pdf
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -12,9 +12,26 @@ on:
       - docs/resume.md
 
 jobs:
-  my_first_job:
-    runs-on: ubuntu-latest
+  build_page:
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write
+      id-token: write
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 
+
+  build_pdf:
+    needs: build_page
+
+    runs-on: ubuntu-latest
     steps:
     - name: checkout repo
       uses: actions/checkout@v3
@@ -41,3 +58,4 @@ jobs:
         committer_email: 41898282+github-actions[bot]@users.noreply.github.com
         message: 'Update resume.pdf'
         add: 'docs/resume.pdf'
+  
