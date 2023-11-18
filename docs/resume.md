@@ -3,14 +3,11 @@
 
 ---
 
-## Objective
-Staff software engineering position in a mission-driven organization with room to further develop my leadership skills
-
----
-
 ## Experience
 ### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
-* Restaurant Core Backend team
+* Availability Planning, Events, and Experiences (APEX) team
+* Modernized a codebase using domain-based methods, reducing technical debt, eliminating support requests, and improving debuggability
+* Converted AngularJS applications to React, improving usability by leveraging a common library of UI elements
 
 ### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020 - October 2022
 * Tech lead on Infrastructure team
@@ -50,6 +47,6 @@ Staff software engineering position in a mission-driven organization with room t
 
 ## Skills
 * Languages: Python, JavaScript, SQL, CSS, C++, C#, Go, Lua, shell scripting
-* Platforms: Windows, Mac, Linux, iOS, Google Cloud, Docker, Kubernetes
-* Software: Visual Studio, VS Code, XCode, Vim, Git, Perforce, Flask, Jira, Jenkins, Unity, MongoDB
+* Platforms: .NET, Mac, Linux, iOS, Google Cloud, Docker, Kubernetes
+* Software: Git, Perforce, Flask, Jira, Jenkins, Unity, MongoDB, Kafka, React
 * Disciplines: Web development, software design, payment systems, databases and data warehouses, game development
