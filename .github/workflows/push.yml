@@ -27,35 +27,35 @@ concurrency:
 
 jobs:
   # Build job
-  build_page:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+  # build_page:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v3
+  #     - name: Build with Jekyll
+  #       uses: actions/jekyll-build-pages@v1
+  #       with:
+  #         source: ./
+  #         destination: ./_site
+  #     - name: Upload artifact
+  #       uses: actions/upload-pages-artifact@v2
 
-  # Deployment job
-  deploy_page:
-    needs: build_page
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+  # # Deployment job
+  # deploy_page:
+  #   needs: build_page
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v2
 
   screenshot_page:
-    needs: deploy_page
+    # needs: deploy_page
     runs-on: ubuntu-latest
     steps:
       - name: git checkout
@@ -66,7 +66,7 @@ jobs:
           webPageURL: https://brian.sobodacha.dev/docs/resume.html
           outputFile: ./docs/resume.pdf
           usePuppeteer: true
-          pdfOptions: '{"format": "Letter", "scale": 0.5, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
+          pdfOptions: '{"format": "Letter", "scale": 0.75, "margin": {"top": 0  , "left": "5mm", "right": "5mm", "bottom": 0}}'
       - name: git commit
         uses: stefanzweifel/git-auto-commit-action@v5
 
