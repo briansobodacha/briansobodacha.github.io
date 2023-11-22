@@ -45,7 +45,7 @@ jobs:
         uses: markwilson/html2pdf@v1.0
         with:
           htmlPath: './_site/docs/resume.html'
-          pdfName: './_site/docs/resume.pdf'
+          pdfName: './_site/docs/resume'
         # uses: fifsky/html-to-pdf-action@master
         # with:
         #   htmlFile: ./_site/docs/resume.html
