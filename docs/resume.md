@@ -3,9 +3,9 @@
  
 ## Experience
 ### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
-* Availability Planning, Events, and Experiences (APEX) team
-* Modernized a codebase using domain-based techniques, reducing tech debt and volume of customer support requests
-* Converted AngularJS applications to React, improving usability by leveraging a common library of UI elements
+* Availability Planning, Events, and Experiences (APEX) backend team
+* Modernized a codebase using domain-based techniques, reducing tech debt and customer support requests
+* Converted AngularJS applications to React, improving usability by incorporating standard UI elements
 
 ### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020 - October 2022
 * Tech lead on Infrastructure team
