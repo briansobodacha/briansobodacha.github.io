@@ -40,13 +40,17 @@ jobs:
           source: ./
           destination: ./_site
       - name: ls
-        run: ls
+        run: ls ./_site
       - name: html to pdf
-        uses: fifsky/html-to-pdf-action@master
+        uses: markwilson/html2pdf@v1.0
         with:
-          htmlFile: ./_site/docs/resume.html
-          outputFile: ./_site/docs/resume.pdf
-          pdfOptions: '{"format": "Letter", "scale": 0.666, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
+          htmlPath: './_site/docs/resume.html'
+          pdfName: './_site/docs/resume.pdf'
+        # uses: fifsky/html-to-pdf-action@master
+        # with:
+        #   htmlFile: ./_site/docs/resume.html
+        #   outputFile: ./_site/docs/resume.pdf
+        #   pdfOptions: '{"format": "Letter", "scale": 0.666, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
