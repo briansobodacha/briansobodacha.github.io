@@ -42,7 +42,7 @@ jobs:
       - name: page to pdf
         uses: misaelnieto/web_to_pdf_action@master
         with:
-          webPageURL: file://github/workspace/dist/_site/docs/resume.html
+          webPageURL: file:///github/workspace/dist/_site/docs/resume.html
           outputFile: ./docs/resume.pdf
           usePuppeteer: true
           pdfOptions: '{"format": "Letter", "scale": 0.666, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
