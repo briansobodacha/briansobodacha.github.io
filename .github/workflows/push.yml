@@ -39,18 +39,13 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: ls
-        run: ls ./_site
-      - name: html to pdf
-        uses: markwilson/html2pdf@v1.0
+      - name: page to pdf
+        uses: misaelnieto/web_to_pdf_action@master
         with:
-          htmlPath: './_site/docs/resume.html'
-          pdfName: './_site/docs/resume'
-        # uses: fifsky/html-to-pdf-action@master
-        # with:
-        #   htmlFile: ./_site/docs/resume.html
-        #   outputFile: ./_site/docs/resume.pdf
-        #   pdfOptions: '{"format": "Letter", "scale": 0.666, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
+          webPageURL: file://github/workspace/dist/_site/docs/resume.html
+          outputFile: ./docs/resume.pdf
+          usePuppeteer: true
+          pdfOptions: '{"format": "Letter", "scale": 0.666, "margin": {"top": 0, "left": "5mm", "right": "5mm", "bottom": 0}}'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
@@ -67,7 +62,7 @@ jobs:
         uses: actions/deploy-pages@v2
 
   # screenshot_page:
-  #   # needs: deploy_page
+  #   needs: deploy_page
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: git checkout
