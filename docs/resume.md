@@ -1,5 +1,5 @@
 # BRIAN SOBODACHA
-1305 NE 75th Ave, Portland, OR 97213 • 415-696-3662 • briansobodacha@gmail.com
+Portland, OR • 415-696-3662 • briansobodacha@gmail.com
  
 ## Experience
 ### OpenTable, Inc., San Francisco, CA • Senior Software Engineer • October 2022 - present
