@@ -6,6 +6,7 @@ Portland, OR • 415-696-3662 • briansobodacha@gmail.com
 * Availability Planning, Events, and Experiences (APEX) backend team
 * Modernized a codebase using domain-based techniques, reducing tech debt and customer support requests
 * Converted AngularJS applications to React, improving usability by incorporating standard UI elements
+* Designed and implemented a microservice providing availability schedules
 
 ### Humble Bundle, Inc., San Francisco, CA • Staff Software Engineer • Mar 2020 - October 2022
 * Tech lead on Infrastructure team
